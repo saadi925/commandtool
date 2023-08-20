@@ -2,7 +2,7 @@
   "name": "commandstool",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://saadi925.github.io/git-commands-tool",
+  "homepage": "https://saadi925.github.io/git-commands-tool/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
