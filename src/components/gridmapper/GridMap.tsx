@@ -24,6 +24,7 @@ const GridMap = ({ data }: { data: CommandGroup[] }) => {
               ))}
             </div>
           ))}
+          <span className="text-3xl font-semibold text-white py-5">No more for now</span>
         </>
       )}
     </div>

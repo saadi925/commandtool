@@ -8,9 +8,9 @@ interface CommandGroup {
 const SearchResults = ({ data }: { data: CommandGroup[] }) => {
   const { searchQuery } = useSearch();
   return (
-    <div className="bg-base-100 mt-4">
+    <div className="bg-base-10 mt-4 max-h-[60vh] w-full p-4">
       <SubHeading
-        className="px-5 py-2 text-white"
+        className="px-5 py-2 text-white "
         text={`Results for ${searchQuery}`}
       />
       {data.length > 0 ? (

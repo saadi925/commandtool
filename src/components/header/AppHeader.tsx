@@ -22,7 +22,7 @@ const AppHeader = () => {
             </svg>
           </label>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link to="/git-commands-tool" className="btn btn-ghost normal-case text-xl">
           Get Code
           <span className="hidden md:block text-green-600 text-sm">
             Code Stack Lab

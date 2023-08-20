@@ -9,11 +9,11 @@ import MongoDBCommandsList from "../commands/mongoCommands";
 const AppRoutes = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/git-commands-tool/",
       element: <RootLayout />,
       children: [
         {
-          path: "/",
+          path: "",
           element: <LandingPage />,
         },
         {
@@ -26,7 +26,7 @@ const AppRoutes = () => {
           ),
         },
         {
-          path: "/mongodb-commands",
+          path: "mongodb-commands",
           element: (
             <AppScreen
               headingText={"MongoDb Commands & More"}
@@ -35,7 +35,7 @@ const AppRoutes = () => {
           ),
         },
         {
-          path: "/linux-commands",
+          path: "linux-commands",
           element: (
             <AppScreen
               headingText={"Linux Useful Commands"}

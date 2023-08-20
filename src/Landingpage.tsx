@@ -22,7 +22,7 @@ const LandingPage = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
         {/* Card 1 - Git Commands */}
-        <Link to="/git-commands">
+        <Link to="git-commands">
           <div className=" bg-white shadow rounded-md">
             <img
               src={ImagesUsed.gitImage}
@@ -45,7 +45,7 @@ const LandingPage = () => {
 
         {/* Card 2 - MongoDB Commands */}
         <div className=" bg-white shadow rounded-md">
-          <Link to="/mongodb-commands">
+          <Link to="mongodb-commands">
             <img
               src={ImagesUsed.mongo}
               alt="MongoDB Commands"
@@ -66,7 +66,7 @@ const LandingPage = () => {
         </div>
 
         {/* Card 3 - Linux Commands */}
-        <Link to="/linux-commands">
+        <Link to="linux-commands">
           <div className=" bg-white shadow rounded-md">
             <img
               src={ImagesUsed.linuxImage}

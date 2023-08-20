@@ -1,9 +1,10 @@
 import useSearch from "../SearchBar/useSearch";
 import { AppHeading } from "../heading/AppHeading";
-import GridMap from "../gridmapper/GridMap";
 import Searchbar from "../SearchBar/Searchbar";
-import SearchResults from "../SearchResults"; // Add the new component
 import BackToTop from "../Backtotop";
+import CustomModal from "../searchmodal/SearchModal";
+import GridMap from "../gridmapper/GridMap";
+
 
 interface CommandGroup {
   subheading: string;
@@ -14,6 +15,7 @@ type AppScreenProps = { commandList: CommandGroup[]; headingText: string };
 
 const AppScreen = ({ commandList, headingText }: AppScreenProps) => {
   const { filteredCommandsGlobal, searchQuery } = useSearch();
+ 
 
   return (
     <div className="h-[calc(100vh-64px)] px-4 pt-2">
@@ -29,11 +31,7 @@ const AppScreen = ({ commandList, headingText }: AppScreenProps) => {
           </div>
 
           {/* Search Results */}
-          {searchQuery && (
-            <div className=" ">
-              <SearchResults data={filteredCommandsGlobal} />
-            </div>
-          )}
+          {searchQuery && <CustomModal results={filteredCommandsGlobal} />}
         </div>
       </div>
     </div>
